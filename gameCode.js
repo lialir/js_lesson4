@@ -9,7 +9,9 @@ do {//Выводим первый вопрос
     }
     else {
         ok = isAnswer(works.a0, event);
-        arr1.push(event);
+	if (event==1 || event==2){
+        	arr1.push(event);
+	}
     }
 } while (!ok);
 switch (event) {
@@ -22,7 +24,9 @@ switch (event) {
             }
             else {
                 ok = isAnswer(works.b0, event);
-                arr1.push(event);
+                if (event==1 || event==2){
+        		arr1.push(event);
+		}
             }
         } while (!ok);
         switch (event) {
@@ -35,7 +39,9 @@ switch (event) {
                     }
                     else {
                         ok = isAnswer(works.d0, event);
-                        arr1.push(event);
+                        if (event==1 || event==2){
+        			arr1.push(event);
+			}
                     }
                 } while (!ok);
 
@@ -49,7 +55,9 @@ switch (event) {
                     }
                     else {
                         ok = isAnswer(works.d0, event);
-                        arr1.push(event);
+                        if (event==1 || event==2){
+        			arr1.push(event);
+			}
                     }
                 } while (!ok);
 
@@ -69,7 +77,9 @@ switch (event) {
             }
             else {
                 ok = isAnswer(works.c0, event);
-                arr1.push(event);
+                if (event==1 || event==2){
+        		arr1.push(event);
+		};
             }
         } while (!ok);
         switch (event) {
@@ -82,7 +92,9 @@ switch (event) {
                     }
                     else {
                         ok = isAnswer(works.d0, event);
-                        arr1.push(event);
+                        if (event==1 || event==2){
+        			arr1.push(event);
+			};
                     }
                 } while (!ok);
 
@@ -96,7 +108,9 @@ switch (event) {
                     }
                     else {
                         ok = isAnswer(works.d0, event);
-                        arr1.push(event);
+                        if (event==1 || event==2){
+        			arr1.push(event);
+			};
                     }
                 } while (!ok);
 
