@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<title>Функция</title>
+	<script>
+		function functionObj(num) {
+		var num = +prompt('введите число от 0 до 999');
+		alert(num);
+		var obj={};
+
+		if (isNaN(num)) { 
+        	alert('не число');
+        	obj=null;
+    		}
+    		else if (num<0 || num>999) { 
+        	alert('число вне диапазона');
+        	obj=null;
+    		}
+
+/*
+	   	else if (!isInteger(num)){
+    		alert('число не целое');   // не работает проверка на int, 123.45 - подходит под условие
+    		}
+*/
+    		else {
+    		alert('число подходит')
+    		var a=Math.floor(num/100);
+    		var b=Math.floor((num-a*100)/10);
+    		var c=num%10;
+    		alert(' сотни '+ a +' десятки '+ b+' единицы '+ c);
+    			if (a!=0){
+    				obj.сотни=a;
+    			}
+			if (b!=0){
+    				obj.десятки=b;
+    			}
+			obj.единицы=c;
+    			}	
+    		console.log(obj);
+		}		
+
+		functionObj();
+
+	</script>
+	</head>
+	<body>
+ </body>
+</html>
